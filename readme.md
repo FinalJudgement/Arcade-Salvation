@@ -3,6 +3,14 @@
 - Create website look according to clients needs
 
   - Home
+
+    - navbar
+    - logo
+    - company name
+    - landing pages modules with assets
+    - footer
+      - include social links
+
   - About
   - Services
   - Contact
