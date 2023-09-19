@@ -187,3 +187,24 @@ footer #logo img {
 footer #social-media {
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 1920px) {
+    #specialty {
+        width: 80%;
+    }
+
+    #specialty-container ul{
+        font-size: 1.2rem;
+    }
+    #specialty-container h2{
+        font-size: 2rem;
+    }
+    #specialty-container span{
+        font-size: 3rem;
+    }
+    #specialty-img img{
+        height: 600px;
+    }
+}
+@media only screen and (max-width: 1765px) {
+}
