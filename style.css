@@ -41,25 +41,20 @@ nav ul {
 
 nav li {
     margin:  0 30px;
-    padding: 10px;
-    border-bottom: 3px solid transparent;
-    transition: .5s;
+    
 }
 
 nav a {
     text-decoration: none;
     color: white;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
     transition: .5s;
 }
-nav li:hover {
+nav a:hover {
     color: rgba(255, 255, 255, 0.507);
     border-color: rgb(255, 255, 112);
 }
-
-nav a:hover{
-    color: rgba(255, 255, 255, 0.507)
-}
-
 
 main {
     margin: 0 auto;
