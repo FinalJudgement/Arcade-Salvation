@@ -118,7 +118,7 @@ main {
     margin: 350px 0;
     /* width: 70%; */
     width: 100%;
-    height: 600px;
+    height: 900px;
     /* background-color: rgb(30, 30, 30); */
     background-color: rgb(238, 238, 228);
     font-family: sans-serif;
@@ -128,6 +128,8 @@ main {
 #specialty-img img {
     display: block;
     height: 700px;
+    border-radius: 10%;
+    box-shadow: 0 4px 10px 2px
 }
 
 #specialty-container h2 {
@@ -188,6 +190,7 @@ footer #social-media {
 @media only screen and (max-width: 1920px) {
     #specialty {
         /* width: 80%; */
+        height: 600px;
     }
 
     #specialty-container ul{
@@ -201,7 +204,6 @@ footer #social-media {
     }
     #specialty-img img{
         height: 500px;
-        border-radius: 10%;
     }
 }
 @media only screen and (max-width: 1765px) {
