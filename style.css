@@ -167,6 +167,13 @@ main {
     color: red;
 }
 
+#specialty-container p {
+    padding: 50px 20px;
+    font-size: 1.6rem;
+    /* background-color: rgb(66, 66, 66); */
+    color: rgb(53, 52, 52);
+}
+
 footer {
     display:flex;
     justify-content: space-evenly;
