@@ -176,7 +176,7 @@ main {
 
 footer {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 300px;
     margin: 0 auto;
@@ -184,15 +184,64 @@ footer {
     color: white;
 }
 
-footer #logo img {
-    max-height: 80px;
+#footer-logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-right: 2px solid white;
-    padding:80px;
+    padding: 25px;
 }
 
-footer #social-media {
+#footer-logo-container img{
+    max-height: 80px;
+    padding-bottom: 20px;
+    
+} 
+
+#footer-logo-container button{
+    height: 60px;
+    width: 200px;
+    border: 5px solid yellow;
+    background-color: #4A4A48;
+    color: white;
+}
+#footer-logo-container button:hover {
+    background-color: yellow;
+    color: #4A4A48;
+    transition: .5s;
+
+}
+#social-media {
+    
+    
+    border-right: 2px solid white;
+}
+
+#interests {
+
+}
+
+.footer-div {
+    padding: 30px 150px;
+
+}
+
+#footer-logo-container button {
+    
+}
+
+.footer-div li{
+    list-style-type: none;
+    height: 50px;
     font-size: 1.5rem;
 }
+
+.footer-div a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 @media only screen and (max-width: 1920px) {
     #specialty {
