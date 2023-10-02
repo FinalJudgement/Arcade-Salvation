@@ -203,6 +203,22 @@ content-cards a {
 }
 /* ===============================================| */
 
+.content-cards button{
+    width: 200px;
+    height: 50px;
+    background-color: #4A4A48;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 1.1rem; 
+    margin: 0 200px;
+    border: 5px solid #4A4A48;
+}
+
+.content-cards button:hover{
+    border-color: yellow;
+    background-color: rgb(43, 43, 43);
+    transition-duration: .5s;
+}
 
 footer {
     display:flex;
@@ -264,9 +280,11 @@ footer {
     color: white;
 }
 
-.flex-div{
+/* .flex-div{
     display:flex;
-}
+    flex-direction: column;
+    align-items: center;
+} */
 
 @media only screen and (max-width: 1920px) {
     .content-cards {
