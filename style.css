@@ -17,6 +17,7 @@ body{
 /* ==================================================================== */
 header{
     width: 100%;
+    height: 100px;
 }
 
 nav {
@@ -62,6 +63,58 @@ nav ul a:hover {
     border-color: rgb(255, 255, 112);
 }
 
+i {
+    margin: 0 5px;
+}
+.dropdown{
+    overflow: hidden;
+    
+    
+}
+
+.dropbtn {
+    width: 80px;
+    height: 20px;
+}
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: 600;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bcbbbb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #484848;
+    color: white;
+    transition: .5s;
+
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition: .5s;
+  }
+
 
 /* ======================================================================= */
 
@@ -72,7 +125,6 @@ nav ul a:hover {
 
 main {
     margin: 0 auto;
-    padding-top: 100px;
     padding-bottom: 1px;
     background-color: rgba(0, 0, 0, 0.262);
 }
@@ -280,11 +332,10 @@ footer {
     color: white;
 }
 
-/* .flex-div{
+.flex-div{
     display:flex;
-    flex-direction: column;
     align-items: center;
-} */
+}
 
 @media only screen and (max-width: 1920px) {
     .content-cards {
@@ -309,4 +360,199 @@ footer {
 
 /* meant for phone */
 @media only screen and (max-width: 1660) {
+}
+
+/* css for services page  */
+
+.services {
+    background-color: #f5f5f5;
+    margin: 200px auto;
+    max-width: 2000px;
+    padding: 90px;
+}
+
+.services section{
+    text-align: left;
+    font-family: sans-serif;
+    margin: 90px;
+}
+
+.services h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 3.0rem;
+}
+
+.services h2 {
+    color: #444;
+    font-size: 2.0rem;
+}
+
+.services ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.services li {
+    margin-bottom: 5px;
+    
+}
+
+
+/* css for the about me page */
+
+#about-me {
+    background-color: #f5f5f5; /* Background color */
+    padding: 90px; /* Add padding for spacing */
+    font-family: sans-serif;
+}
+
+.about-container {
+    max-width: 1200px; /* Set the maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: left; /* Align text to the left */
+}
+
+.about-container h1 {
+    font-size: 3rem; /* Set the heading font size */
+    color: #333; /* Heading text color */
+}
+
+.about-container p {
+    font-size: 1.5rem; /* Set the paragraph font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    color: #555; /* Paragraph text color */
+    margin: 30px 0;
+}
+
+.about-container img {
+    height: 250px;
+    border-radius: 10%;
+    box-shadow: 0 4px 10px 2px;
+    margin: 0 50px;
+}
+
+.about-container ul {
+    list-style-type: disc; /* Use bullets for unordered lists */
+    margin: 30px 20px; /* Add left margin for lists */
+    font-size: 1.5rem; /* Set the list font size */
+    color: #555; /* List text color */
+}
+
+/* Style headings within the content */
+.about-container h2 {
+    font-size: 2rem; /* Set subheading font size */
+    color: #222; /* Subheading text color */
+    margin-top: 100px; /* Add top margin for spacing */
+}
+
+.about-container button {
+    background-color: rgb(67, 140, 241);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    padding: 20px 80px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.about-container button:hover {
+    background-color: rgb(51, 95, 149);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+/* This is css for the contact me page  */
+
+#contact {
+    background-color: #f5f5f5; /* Background color */
+    padding: 90px; /* Add padding for spacing */
+    font-family: sans-serif;
+}
+
+.contact-container {
+    max-width: 800px; /* Set the maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: left; /* Align text to the left */
+}
+
+h1 {
+    font-size: 3rem; /* Set the heading font size */
+    color: #333; /* Heading text color */
+}
+
+p {
+    font-size: 1.5rem; /* Set the paragraph font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    color: #555; /* Paragraph text color */
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: disc; /* Use bullets for unordered lists */
+    margin: 20px; /* Add left margin for lists */
+    font-size: 1.5rem; /* Set the list font size */
+    color: #555; /* List text color */
+}
+
+/* Style headings within the content */
+h2 {
+    font-size: 2.0rem; /* Set subheading font size */
+    color: #222; /* Subheading text color */
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+/* Style links within the content */
+a {
+    color: #007bff; /* Link text color */
+    text-decoration: underline; /* Add underline to links */
+}
+
+/* Style links on hover */
+a:hover {
+    color: #0056b3; /* Change link color on hover */
+}
+
+/* Style the contact form */
+form {
+    margin-top: 20px; /* Add top margin for spacing */
+    font-size: 1.3rem;
+}
+
+label {
+    display: block; /* Display labels on separate lines */
+    margin-bottom: 5px; /* Add bottom margin for spacing */
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Set input fields to full width */
+    padding: 10px; /* Add padding to input fields */
+    margin-bottom: 15px; /* Add bottom margin for spacing */
+    border: 1px solid #ccc; /* Add a border to input fields */
+    border-radius: 5px; /* Round the corners of input fields */
+    font-size: 16px; /* Set the input font size */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Add padding to buttons */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Round the corners of buttons */
+    font-size: 16px; /* Set the button font size */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change button color on hover */
 }

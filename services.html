@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repair your pinball machine</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -15,34 +16,88 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+                <li><div class="dropdown">
+                    <button class="dropbtn">About<i class="fa fa-caret-down"></i>
+                        
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Me</a>
+                        <a href="">Who we are</a>
+                        <a href="">Gallery</a>
+                    </div>
+                </div></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-
+    <main class="services">
+        <section>
+            <h1>Elevate Your Arcade Experience</h1>
+            <p>Revamp your arcade machine effortlessly with our services:</p>
+        </section>
+    
+        <section>
+            <h2>1) Modernize Your Cabinet</h2>
+            <ul>
+                <li>Upgrade old machines with our plug-and-play control panel set.</li>
+                <li>Includes a new board, power supply, and wired Jamma harness.</li>
+                <li>Play 60 titles with installation in under 5 minutes.</li>
+                <li>No electronics or soldering skills needed.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>2) EPROM Excellence</h2>
+            <ul>
+                <li>Get a new EPROM tailored for your machine.</li>
+                <li>Money-back guarantee.</li>
+                <li>Send us a photo of your old EPROM for a perfect match.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>3) Expert Board Repairs</h2>
+            <ul>
+                <li>Repair Jamma and non-Jamma boards, monitor chassis.</li>
+                <li>No technician visits; we have advanced fixtures.</li>
+                <li>Fixed rate of $150, including parts and a 60-day warranty.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>4) CRT Monitor Rejuvenation</h2>
+            <ul>
+                <li>Revitalize your CRT monitor; no need for costly replacements.</li>
+                <li>Preserve the authenticity of arcade gaming.</li>
+                <li>See the difference between CRT and flat screens.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <p>Rediscover the thrill of arcade gaming with our cutting-edge solutions. <a href="contact.html">Contact us</a> today!</p>
+        </section>
     </main>
 
     <footer>
         <div id="footer-logo-container">
                 <img src="assets\ArcSalNeonLogo1.png" alt="pinball-repair-logo">
-            <button>Contact Us</button>
+            <button onclick="window.location.href = 'contact.html';">Contact Us</button>
         </div>
         
         <div id="social-media" class="footer-div">
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.facebook.com/ArcadeSalvation/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/arcadesalvation/?hl=en">Instagram</a></li>
                 <li><a href="#">Youtube</a></li>
             </ul>
         </div>
         <div id="interests" class="footer-div">
             <ul>
-                <li><a href="#">Buy and Sell</a></li>
-                <li><a href="#">Tutorials</a></li>
-                <li><a href="#">More</a></li>
+                <li><a href="#">Coming Soon: Buy and Sell</a></li>
+                <li><a href="#">Coming Soon: Tutorials</a></li>
+                <li><a href="#">Coming Soon: More</a></li>
             </ul>
         </div>
         

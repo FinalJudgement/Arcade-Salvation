@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinball Repair Professionals</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -15,7 +16,17 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+                <li><div class="dropdown">
+                    <button class="dropbtn">About<i class="fa fa-caret-down"></i>
+                        
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Me</a>
+                        <a href="">Who we are</a>
+                        <a href="">Gallery</a>
+                    </div>
+                </div></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -29,7 +40,7 @@
                 <h1>Pinball <br> Repair Service</h1>
                 <hr>
                 <p>Repairing obsolete equipment is never easy. <br> We just make it look that way!</p>
-                <button>516-710-5088</button>
+                <button onclick="window.location.href = 'contact.html';">516-710-5088</button>
             </div>
             <div>
                 <img src="assets\banner2.jpg" alt="">
@@ -42,11 +53,11 @@
                 <img src="assets\specialty-img-sal.jpg" alt="Repaired Pinball Machine">
             </div>
             <div>
-                <h2>Why Us?</h2>
+                <h2>Why Arcade Salvation?</h2>
                 <ul>
                     <li><span>&#10003;</span>We provide seamless in house repairs for all of your pinball and arcade needs</li>
-                    <li><span>&#10003;</span>We carry <a href="#">obsolete</a> componenets for your vintage pinball machines</li>
-                    <li><span>&#10003;</span>We <a href="#">rejuvinate</a> monitors with our Monitor Restoration practices </li>
+                    <li><span>&#10003;</span>We carry <a href="services.html">obsolete</a> componenets for your vintage pinball machines</li>
+                    <li><span>&#10003;</span>We <a href="services.html">rejuvinate</a> monitors with our Monitor Restoration practices </li>
                     <li><span>&#10003;</span>last thing</li>
                 </ul>
             </div>
@@ -70,14 +81,14 @@
             <div>
                 <img src="assets\specialty-img-sal3.jpg" alt="Repaired Pinball Machine">
             </div>
-            <div class="flex-div">
+            <div>
                 <h2>Passion</h2>
                 <p>For us, arcade and pinball machines aren't just a business, but our passion. We've spent 
                     countless years upgrading, and customizing and repairing arcade equipment. We know what 
                     it takes to get the job done right and we thrive to make sure that you're arcade and pinball 
                     machines get the proper repairs they need so that you can get back to enjoying the game. 
                 </p>
-                <button>See what else we do!</button>
+                <button onclick="window.location.href = 'about.html';">Learn More!</button>
             </div>
         </section>
     </main>
@@ -85,21 +96,21 @@
     <footer>
         <div id="footer-logo-container">
                 <img src="assets\ArcSalNeonLogo1.png" alt="pinball-repair-logo">
-            <button>Contact Us</button>
+            <button onclick="window.location.href = 'contact.html';">Contact Us</button>
         </div>
         
         <div id="social-media" class="footer-div">
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.facebook.com/ArcadeSalvation/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/arcadesalvation/?hl=en">Instagram</a></li>
                 <li><a href="#">Youtube</a></li>
             </ul>
         </div>
         <div id="interests" class="footer-div">
             <ul>
-                <li><a href="#">Buy and Sell</a></li>
-                <li><a href="#">Tutorials</a></li>
-                <li><a href="#">More</a></li>
+                <li><a href="#">Coming Soon: Buy and Sell</a></li>
+                <li><a href="#">Coming Soon: Tutorials</a></li>
+                <li><a href="#">Coming Soon: More</a></li>
             </ul>
         </div>
         

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repair your pinball machine</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -15,34 +16,71 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+                <li><div class="dropdown">
+                    <button class="dropbtn">About<i class="fa fa-caret-down"></i>
+                        
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Me</a>
+                        <a href="">Who we are</a>
+                        <a href="">Gallery</a>
+                    </div>
+                </div></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
+        <section id="contact">
+            <div class="contact-container">
+                <h1>Contact Arcade Salvation</h1>
+                <p>If you have any questions or would like to schedule a pinball machine service, please don't hesitate to get in touch with us. You can reach us through the following methods:</p>
+    
+                <!-- Contact information -->
+                <ul>
+                    <li><strong>Phone:</strong>516-710-5088</li>
+                    <li><strong>Email:</strong> <a href="mailto:youremail@example.com">Service@ArcadeSalvation.com</a></li>
+                    <!-- <li><strong>Address:</strong> [Your Address]</li> -->
+                </ul>
+    
+                <!-- Contact form -->
+                <h2>Contact Form</h2>
+                <form action="process_contact.php" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div id="footer-logo-container">
                 <img src="assets\ArcSalNeonLogo1.png" alt="pinball-repair-logo">
-            <button>Contact Us</button>
+            <button onclick="window.location.href = 'contact.html';">Contact Us</button>
         </div>
         
         <div id="social-media" class="footer-div">
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.facebook.com/ArcadeSalvation/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/arcadesalvation/?hl=en">Instagram</a></li>
                 <li><a href="#">Youtube</a></li>
             </ul>
         </div>
         <div id="interests" class="footer-div">
             <ul>
-                <li><a href="#">Buy and Sell</a></li>
-                <li><a href="#">Tutorials</a></li>
-                <li><a href="#">More</a></li>
+                <li><a href="#">Coming Soon: Buy and Sell</a></li>
+                <li><a href="#">Coming Soon: Tutorials</a></li>
+                <li><a href="#">Coming Soon: More</a></li>
             </ul>
         </div>
         
