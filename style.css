@@ -371,10 +371,33 @@ footer {
     padding: 90px;
 }
 
+@keyframes btn-color {
+    0%   {background-color: red;}
+    25%  {background-color: blue;}
+    50%  {background-color: green;}
+    100% {background-color: red;}
+  }
+
+.services button{
+    position: fixed;
+    top: 200px;
+    right: 400px;
+    background-color: red;
+    padding: 20px 50px;
+    border: 3px solid white;
+    animation-name: btn-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.services button:hover{
+    background-color: rgb(87, 0, 0);
+}
+
 .services section{
     text-align: left;
     font-family: sans-serif;
-    margin: 90px;
+    padding: 90px;
 }
 
 .services h1 {
@@ -399,6 +422,29 @@ footer {
     
 }
 
+.services img{
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 0 4px 10px 2px;
+    margin: 0 50px;
+}
+
+.invert-color {
+    background-color: rgb(40, 39, 39);
+}
+
+.invert-color h2{
+    color: rgb(255, 255, 112);
+}
+
+.invert-color p{
+    color: rgb(255, 255, 112);
+}
+
+.invert-color ul{
+    color: rgb(255, 255, 112);
+
+}
 
 /* css for the about me page */
 
