@@ -33,7 +33,10 @@ arrowLeft.addEventListener("click", () => {
   }
   imgSlider.children[galleryIndex].style.border = "3px solid transparent";
   imgSlider.children[galleryIndex - 1].style.border = "3px solid yellow";
-  imgSlider.scrollTo((galleryIndex - 1) * 90, 0);
+
+  if (galleryIndex < 4) {
+    imgSlider.scrollTo((galleryIndex - 1) * 0, 0);
+  }
   console.log(galleryIndex);
 });
 
@@ -44,7 +47,10 @@ arrowRight.addEventListener("click", () => {
   }
   imgSlider.children[galleryIndex - 2].style.border = "3px solid transparent";
   imgSlider.children[galleryIndex - 1].style.border = "3px solid yellow";
-  imgSlider.scrollTo((galleryIndex - 1) * 90, 0);
+
+  if (galleryIndex > 6) {
+    imgSlider.scrollTo((galleryIndex - 1) * 135, 0);
+  }
 
   console.log(galleryIndex);
 });
