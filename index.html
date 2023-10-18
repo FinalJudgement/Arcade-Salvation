@@ -16,7 +16,7 @@
       <nav>
         <div>
           <a href="index.html"
-            ><img src="assets\ArcSalNeonLogo1.png" alt="Pinball Repair"
+            ><img src="assets/ArcSalNeonLogo1.png" alt="Pinball Repair"
           /></a>
         </div>
         <ul>
@@ -58,42 +58,47 @@
             516-710-5088
           </button>
         </div>
-        <div>
-          <img src="assets\banner2.jpg" alt="" />
+        <div class="img-container">
+          <img src="assets/banner2.jpg" alt="" />
         </div>
       </section>
 
       <!-- Why Us Content  -->
       <section class="content-cards">
-        <div>
+        <div class="img-container img-special">
           <img
-            src="assets\specialty-img-sal.jpg"
+            src="assets/specialty-img-sal.jpg"
             alt="Repaired Pinball Machine"
           />
         </div>
-        <div>
+        <div class="content-info">
           <h2>Why Arcade Salvation?</h2>
-          <ul>
-            <li>
-              <span>&#10003;</span>We provide seamless in house repairs for all
-              of your pinball and arcade needs
-            </li>
-            <li>
-              <span>&#10003;</span>We carry
-              <a href="services.html">obsolete</a> componenets for your vintage
-              pinball machines
-            </li>
-            <li>
-              <span>&#10003;</span>We
-              <a href="services.html">rejuvinate</a> monitors with our Monitor
-              Restoration practices
-            </li>
-          </ul>
+          <div class="checklist">
+            <ul class="check">
+              <li><div>&#10003;</div></li>
+              <li><div>&#10003;</div></li>
+              <li><div>&#10003;</div></li>
+            </ul>
+            <ul>
+              <li>
+                We provide seamless in house repairs for all of your pinball and
+                arcade needs
+              </li>
+              <li>
+                We carry <a href="services.html">obsolete</a> componenets for
+                your vintage pinball machines
+              </li>
+              <li>
+                We <a href="services.html">rejuvinate</a> monitors with our
+                Monitor Restoration practices
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="content-cards">
-        <div>
+      <section class="content-cards reverse-div">
+        <div class="content-info">
           <h2>Experience</h2>
           <p>
             We've been in the business since 2002 and have worked on hundreds of
@@ -105,22 +110,22 @@
             success of modern arcades.
           </p>
         </div>
-        <div>
+        <div class="img-container">
           <img
-            src="assets\specialty-img-sal2.jpg"
+            src="assets/specialty-img-sal2.jpg"
             alt="Repaired Pinball Machine"
           />
         </div>
       </section>
 
       <section class="content-cards">
-        <div>
+        <div class="img-container">
           <img
-            src="assets\specialty-img-sal3.jpg"
+            src="assets/specialty-img-sal3.jpg"
             alt="Repaired Pinball Machine"
           />
         </div>
-        <div>
+        <div class="content-info">
           <h2>Passion</h2>
           <p>
             For us, arcade and pinball machines aren't just a business, but our
@@ -129,17 +134,19 @@
             done right and we thrive to make sure that you're arcade and pinball
             machines get the proper repairs they need so that you can get back
             to enjoying the game.
+            <br />
+            <br />
+            <button onclick="window.location.href = 'about.html';">
+              Learn More!
+            </button>
           </p>
-          <button onclick="window.location.href = 'about.html';">
-            Learn More!
-          </button>
         </div>
       </section>
     </main>
 
     <footer>
       <div id="footer-logo-container">
-        <img src="assets\ArcSalNeonLogo1.png" alt="pinball-repair-logo" />
+        <img src="assets/ArcSalNeonLogo1.png" alt="pinball-repair-logo" />
         <button onclick="window.location.href = 'contact.html';">
           Contact Us
         </button>
@@ -160,13 +167,13 @@
           </li>
         </ul>
       </div>
-      <div id="interests" class="footer-div">
+      <!-- <div id="interests" class="footer-div">
         <ul>
           <li><a href="#">Coming Soon: Buy and Sell</a></li>
           <li><a href="#">Coming Soon: Tutorials</a></li>
           <li><a href="#">Coming Soon: More</a></li>
         </ul>
-      </div>
+      </div> -->
     </footer>
     <script src="app.js"></script>
   </body>

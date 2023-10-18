@@ -2,11 +2,20 @@
   margin: 0;
   padding: 0;
 }
+html {
+  width: 100vw;
+}
+html,
+body {
+  overflow-x: hidden;
+}
 
 body {
+  position: relative;
   background-image: url("./assets/background-asset-1.jpg");
   background-size: 1900px;
   background-attachment: fixed;
+  width: 100%;
 }
 
 /* ==================================================================== */
@@ -22,18 +31,19 @@ header {
 nav {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: black;
   color: white;
   height: 100px;
   width: 100%;
   border-bottom: 2px solid white;
+  z-index: 1;
 }
 
 nav img {
   max-height: 80px;
-  margin: 0 200px;
+  /* margin-left: 20px; */
 }
 
 nav ul {
@@ -42,11 +52,11 @@ nav ul {
   font-family: sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  margin: 0 200px;
+  /* margin: 0 200px; */
 }
 
 nav li {
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 nav ul a {
@@ -117,13 +127,16 @@ i {
 /* ======================================================================= */
 
 main {
+  position: relative;
   margin: 0 auto;
+  width: 100%;
   padding-bottom: 1px;
   background-color: rgba(0, 0, 0, 0.262);
 }
 
 #banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   background-color: rgb(26, 26, 26);
@@ -168,7 +181,9 @@ main {
 }
 
 #banner img {
-  height: 500px;
+  max-height: 500px;
+  min-width: 300px;
+  width: 100%;
 }
 
 /* ======================================================================= */
@@ -182,18 +197,35 @@ main {
 /* ================================================| */
 .content-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin: 350px 0;
   width: 100%;
-  height: 900px;
+  /* height: 900px; */
   background-color: rgb(238, 238, 228);
   font-family: sans-serif;
+  padding: 20px 0;
+}
+
+.content-info {
+  max-width: 550px;
+  text-align: center;
+  text-justify: auto;
+}
+
+.img-container {
+  padding: 20px;
+}
+
+.img-special {
+  padding: 20px 70px;
 }
 
 .content-cards img {
   display: block;
-  height: 700px;
+  width: 100%;
+  max-height: 700px;
   border-radius: 10%;
   box-shadow: 0 4px 10px 2px;
 }
@@ -223,17 +255,31 @@ content-cards a {
 }
 
 .content-cards li {
-  padding: 20px;
-  font-weight: 700;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 1.6rem;
+  color: rgb(53, 52, 52);
+  font-weight: 500;
+  height: 100px;
 }
 
-.content-cards span {
+.content-info div {
   content: "\2713";
-  margin-right: 20px;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: rgb(26, 221, 26);
 }
+.checklist {
+  display: flex;
+}
+.check {
+  margin: 0;
+}
+
+.check li {
+  padding: 10px;
+}
+
 /* ===============================================| */
 
 /* effects multiple sections */
@@ -249,13 +295,13 @@ content-cards a {
 /* ===============================================| */
 
 .content-cards button {
+  position: relative;
   width: 200px;
   height: 50px;
   background-color: #4a4a48;
   color: rgb(255, 255, 255);
   border-radius: 10px;
   font-size: 1.1rem;
-  margin: 0 200px;
   border: 5px solid #4a4a48;
 }
 
@@ -281,6 +327,7 @@ footer {
   align-items: center;
   border-right: 2px solid white;
   padding: 25px;
+  width: 50%;
 }
 
 #footer-logo-container img {
@@ -302,11 +349,12 @@ footer {
 }
 
 #social-media {
-  border-right: 2px solid white;
+  /* border-right: 2px solid white; */
 }
 
 .footer-div {
-  padding: 30px 150px;
+  text-align: center;
+  width: 50%;
 }
 
 .footer-div li {
@@ -323,31 +371,6 @@ footer {
 .flex-div {
   display: flex;
   align-items: center;
-}
-
-@media only screen and (max-width: 1920px) {
-  .content-cards {
-    height: 600px;
-  }
-
-  .content-cards ul {
-    font-size: 1.2rem;
-  }
-  .content-cards h2 {
-    font-size: 1.8rem;
-  }
-  .content-cards span {
-    font-size: 3rem;
-  }
-  .content-cards img {
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 1765px) {
-}
-
-/* meant for phone */
-@media only screen and (max-width: 1660) {
 }
 
 /* css for services page  */
@@ -531,7 +554,7 @@ p {
   margin: 20px 0;
 }
 
-ul {
+.contact-container ul {
   list-style-type: disc; /* Use bullets for unordered lists */
   margin: 20px; /* Add left margin for lists */
   font-size: 1.5rem; /* Set the list font size */
@@ -697,4 +720,123 @@ button:hover {
   margin: 10px;
   height: 180px;
   width: 224px;
+}
+
+/* @media only screen and (max-width: 1620px) {
+  nav {
+    justify-content: flex-start;
+  }
+  nav img {
+    max-height: 80px;
+    margin: 0 200px;
+  }
+  nav ul {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  nav {
+    justify-content: flex-start;
+  }
+  nav img {
+    max-height: 80px;
+    margin-right: 20px;
+  }
+  nav ul {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1200x) {
+  nav {
+    justify-content: flex-start;
+  }
+  nav img {
+    max-height: 80px;
+    margin-right: 20px;
+  }
+  nav ul {
+    margin: 0;
+  }
+} */
+
+@media only screen and (max-width: 1920px) {
+  .content-cards {
+    /* height: 600px; */
+  }
+
+  .content-cards ul {
+    font-size: 1.2rem;
+  }
+  .content-cards h2 {
+    font-size: 1.8rem;
+  }
+  .content-cards span {
+    font-size: 3rem;
+  }
+  .content-cards img {
+    max-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1038) {
+  .reverse-div {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+  nav div {
+    margin-left: 20px;
+    align-self: first baseline;
+  }
+  nav img {
+    max-height: 20px;
+  }
+  .dropdown .dropbtn {
+    font-size: 0.8rem;
+    border-bottom: 3px solid transparent;
+  }
+
+  .dropdown {
+    margin-left: 0;
+  }
+
+  nav ul {
+    font-size: 0.8rem;
+  }
+  nav li {
+    margin: 0;
+  }
+  #banner {
+    padding: 20px;
+  }
+  .content-cards {
+    margin: 250px 0;
+  }
+
+  .content-cards h2 {
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 2px solid black;
+  }
+
+  .content-cards li {
+    font-size: 1.3rem;
+  }
+
+  .content-cards p {
+    font-size: 1.3rem;
+  }
+  #footer-logo-container img {
+    max-height: 40px;
+  }
+  .footer-div li {
+    font-size: 1rem;
+  }
 }
