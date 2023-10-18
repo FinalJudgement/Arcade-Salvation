@@ -780,22 +780,28 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 1038) {
+@media only screen and (max-width: 1088px) {
   .reverse-div {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 950px) {
   nav {
     flex-direction: column;
+  }
+  nav img {
+    max-height: 40px;
   }
   nav div {
     margin-left: 20px;
     align-self: first baseline;
   }
+}
+
+@media only screen and (max-width: 500px) {
   nav img {
-    max-height: 20px;
+    /* max-height: 20px; */
   }
   .dropdown .dropbtn {
     font-size: 0.8rem;
