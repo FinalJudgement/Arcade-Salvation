@@ -49,10 +49,11 @@ const load = () => {
     // console.log(galleryIndex);
   });
 };
+
 const customEmail = () => {
   form.addEventListener("change", () => {
     let result = freshMail.value;
-    let email = newEmail.value;
+    let email = `Inquiry at Arcade Salvation from customer ${newEmail.value}`;
     freshMail.value = email;
   });
 };
