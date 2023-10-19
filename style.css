@@ -408,9 +408,13 @@ footer {
   background-color: red;
   padding: 20px 50px;
   border: 3px solid white;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
   animation-name: btn-color;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  border-radius: 10px;
 }
 
 .services button:hover {
