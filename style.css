@@ -162,18 +162,25 @@ main {
   color: white;
 }
 
-#banner button {
+#banner aside {
+  margin: 50px;
+}
+
+#banner a {
+  display: block;
   background-color: rgb(255, 84, 84);
   border: 2px solid rgb(255, 255, 255);
   color: white;
+  min-width: 120px;
   padding: 20px 80px;
-  margin: 10px;
   border-radius: 50px;
   font-size: 1.2rem;
   font-weight: 700;
+  margin: 50px;
+  text-decoration: none;
 }
 
-#banner button:hover {
+#banner a:hover {
   background-color: rgb(129, 26, 26);
   border-color: rgb(255, 255, 112);
   color: rgb(255, 255, 112);
@@ -348,10 +355,6 @@ footer {
   transition: 0.5s;
 }
 
-#social-media {
-  /* border-right: 2px solid white; */
-}
-
 .footer-div {
   text-align: center;
   width: 50%;
@@ -378,8 +381,9 @@ footer {
 .services {
   background-color: #f5f5f5;
   margin: 200px auto;
-  max-width: 2000px;
-  padding: 90px;
+  max-width: 80%;
+  /* padding: 90px; */
+  overflow-x: hidden;
 }
 
 @keyframes btn-color {
@@ -400,7 +404,7 @@ footer {
 .services button {
   position: fixed;
   top: 200px;
-  right: 400px;
+  right: 20px;
   background-color: red;
   padding: 20px 50px;
   border: 3px solid white;
@@ -411,12 +415,24 @@ footer {
 
 .services button:hover {
   background-color: rgb(87, 0, 0);
+  animation-name: none;
 }
 
 .services section {
   text-align: left;
   font-family: sans-serif;
-  padding: 90px;
+  margin: 0 auto;
+  padding: 90px 50px;
+  width: 80%;
+}
+
+.services section img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 4px 10px 2px;
+  margin: 0 50px;
 }
 
 .services h1 {
@@ -432,20 +448,23 @@ footer {
 
 .services ul {
   list-style-type: disc;
-  margin-left: 20px;
+  padding: 40px;
   font-size: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 5px;
 }
 
 .services li {
   margin-bottom: 5px;
+  color: #333;
 }
 
-.services img {
-  height: 350px;
+/* .services div img {
+  max-height: 350px;
   border-radius: 10%;
   box-shadow: 0 4px 10px 2px;
   margin: 0 50px;
-}
+} */
 
 .invert-color {
   background-color: rgb(40, 39, 39);
@@ -503,6 +522,11 @@ footer {
   color: #555; /* List text color */
 }
 
+.about-container li {
+  list-style: none;
+  padding: 10px 0;
+}
+
 /* Style headings within the content */
 .about-container h2 {
   font-size: 2rem; /* Set subheading font size */
@@ -510,20 +534,25 @@ footer {
   margin-top: 100px; /* Add top margin for spacing */
 }
 
-.about-container button {
+.about-container aside {
+  max-width: 120px;
   background-color: rgb(67, 140, 241);
-  border: 2px solid rgb(0, 0, 0);
-  color: white;
+  border: 3px solid rgb(0, 0, 0);
   padding: 20px 80px;
-  margin: 10px;
+  margin: 0 auto;
   border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.about-container button:hover {
-  background-color: rgb(51, 95, 149);
-  border-color: rgb(255, 255, 255);
+.about-container aside a {
+  color: white;
+  text-decoration: none;
+}
+
+.about-container aside:hover {
+  background-color: rgb(139, 186, 243);
+  border-color: rgb(19, 239, 7);
   color: rgb(255, 255, 255);
   transition: 0.5s;
 }
@@ -555,7 +584,7 @@ p {
 }
 
 .contact-container ul {
-  list-style-type: disc; /* Use bullets for unordered lists */
+  list-style-type: none; /* Use bullets for unordered lists */
   margin: 20px; /* Add left margin for lists */
   font-size: 1.5rem; /* Set the list font size */
   color: #555; /* List text color */
@@ -606,7 +635,7 @@ textarea {
   resize: vertical; /* Allow vertical resizing of the textarea */
 }
 
-button {
+.contact-container button {
   background-color: #007bff; /* Button background color */
   color: #fff; /* Button text color */
   padding: 10px 20px; /* Add padding to buttons */
@@ -614,6 +643,8 @@ button {
   border-radius: 5px; /* Round the corners of buttons */
   font-size: 16px; /* Set the button font size */
   cursor: pointer; /* Change cursor on hover */
+  display: block;
+  margin: 0 auto;
 }
 
 button:hover {
@@ -623,8 +654,12 @@ button:hover {
 /* this is css for the gallery */
 
 #gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f5f5f5;
-  height: 1000px;
+  max-height: 1000px;
   padding: 90px;
   padding-bottom: 280px;
   font-family: sans-serif;
@@ -642,11 +677,15 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
-  width: 1230px;
+  max-height: 700px;
+  /* max-width: 700px; */
 }
 
 .arrow {
+  position: relative;
+  top: calc(50% - 10px);
+  left: 40%;
+
   border: solid rgb(255, 255, 255);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -654,7 +693,11 @@ button:hover {
 }
 
 .img-slide {
-  padding: 391px 30px;
+  position: relative;
+  height: 700px;
+  width: 100px;
+  min-width: 50px;
+
   background-color: rgb(53, 53, 53);
 }
 .img-slide:hover {
@@ -672,22 +715,28 @@ button:hover {
 #img-display {
   display: flex;
   background-color: rgb(0, 0, 0);
-  height: 100%;
-  width: 1068px;
+  padding: 0 10px;
+  height: 700px;
+  min-height: 350px;
+  max-height: 800px;
+  min-width: 450px;
+  max-width: 1068px;
+
   justify-content: center;
   align-items: center;
 }
 
 #img-display img {
-  max-height: 800px;
-  max-width: 1063px;
+  min-height: 250px;
+  max-height: 600px;
+  min-width: 300px;
+  max-width: 700px;
 }
 
 .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
-
 #img-slider {
   position: relative;
   display: flex;
@@ -695,8 +744,10 @@ button:hover {
   border: 3px solid rgb(45, 45, 45);
   max-height: 210px;
   margin: 0 auto;
-  height: 210px;
-  width: 1224px;
+  max-height: 210px;
+  min-width: 800px;
+  max-width: 814px;
+  width: 1000px;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -722,50 +773,7 @@ button:hover {
   width: 224px;
 }
 
-/* @media only screen and (max-width: 1620px) {
-  nav {
-    justify-content: flex-start;
-  }
-  nav img {
-    max-height: 80px;
-    margin: 0 200px;
-  }
-  nav ul {
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 1370px) {
-  nav {
-    justify-content: flex-start;
-  }
-  nav img {
-    max-height: 80px;
-    margin-right: 20px;
-  }
-  nav ul {
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 1200x) {
-  nav {
-    justify-content: flex-start;
-  }
-  nav img {
-    max-height: 80px;
-    margin-right: 20px;
-  }
-  nav ul {
-    margin: 0;
-  }
-} */
-
 @media only screen and (max-width: 1920px) {
-  .content-cards {
-    /* height: 600px; */
-  }
-
   .content-cards ul {
     font-size: 1.2rem;
   }
@@ -777,6 +785,18 @@ button:hover {
   }
   .content-cards img {
     max-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .flex-div {
+    flex-wrap: wrap;
+  }
+  .services .flex-div {
+    justify-content: center;
+  }
+  .services p {
+    max-width: 600px;
   }
 }
 
@@ -797,12 +817,69 @@ button:hover {
     margin-left: 20px;
     align-self: first baseline;
   }
+
+  .services section div p {
+    font-size: 1rem;
+  }
+  .services section div ul {
+    font-size: 1rem;
+  }
+  .services section p {
+    font-size: 1rem;
+  }
+
+  #gallery {
+    min-width: 370px;
+    padding: 100px 0;
+  }
+
+  #img-display {
+    max-height: 300px;
+    max-width: 300px;
+    min-width: 250px;
+  }
+
+  #img-display img {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .img-slide {
+    max-height: 350px;
+
+    min-width: 30px;
+    max-width: 50px;
+  }
+
+  .arrow {
+    left: 10%;
+  }
+
+  #img-slider {
+    max-height: 100px;
+    min-width: 320px;
+    max-width: 364px;
+  }
+  #img-slider img {
+    max-height: 70px;
+  }
+
+  #footer-logo-container img {
+    max-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .contact-container ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  nav img {
-    /* max-height: 20px; */
-  }
   .dropdown .dropbtn {
     font-size: 0.8rem;
     border-bottom: 3px solid transparent;
@@ -839,9 +916,46 @@ button:hover {
   .content-cards p {
     font-size: 1.3rem;
   }
-  #footer-logo-container img {
-    max-height: 40px;
+
+  #about-me {
+    padding: 80px 20px;
   }
+
+  #about-me h1 {
+    text-align: center;
+  }
+
+  #about-me h2 {
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+
+  #about-me p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .about-container ul {
+    font-size: 1.3rem;
+  }
+
+  .about-container img {
+    margin: 0 auto;
+  }
+  .contact-container h1 {
+    text-align: center;
+  }
+
+  #contact h2 {
+    text-align: center;
+  }
+
+  .contact-container p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
   .footer-div li {
     font-size: 1rem;
   }
