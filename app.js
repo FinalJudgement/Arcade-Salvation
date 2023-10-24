@@ -31,9 +31,9 @@ const load = () => {
     }
     imgSlider.children[galleryIndex].style.border = "3px solid transparent";
     imgSlider.children[galleryIndex - 1].style.border = "3px solid yellow";
-    if (galleryIndex < 4) {
-      imgSlider.scrollTo((galleryIndex - 1) * 0, 0);
-    }
+
+    imgSlider.scrollTo((galleryIndex - 1) * 70, 0);
+
     // console.log(galleryIndex);
   });
   arrowRight.addEventListener("click", () => {
@@ -43,9 +43,9 @@ const load = () => {
     }
     imgSlider.children[galleryIndex - 2].style.border = "3px solid transparent";
     imgSlider.children[galleryIndex - 1].style.border = "3px solid yellow";
-    if (galleryIndex > 6) {
-      imgSlider.scrollTo((galleryIndex - 1) * 135, 0);
-    }
+
+    imgSlider.scrollTo((galleryIndex - 1) * 70, 0);
+
     // console.log(galleryIndex);
   });
 };
