@@ -9,7 +9,7 @@ const newEmail = document.querySelector("#email");
 const load = () => {
   let galleryIndex = 1;
   imgDisplay.src = "assets/ASIMG1.jpg";
-  for (let i = 1; i <= 9; i++) {
+  for (let i = 1; i <= 25; i++) {
     let createImg = document.createElement("img");
     createImg.src = `assets/ASIMG${i}.jpg`;
     createImg.addEventListener("click", (e) => {
@@ -32,19 +32,19 @@ const load = () => {
     imgSlider.children[galleryIndex].style.border = "3px solid transparent";
     imgSlider.children[galleryIndex - 1].style.border = "3px solid yellow";
 
-    imgSlider.scrollTo((galleryIndex - 1) * 70, 0);
+    imgSlider.scrollTo((galleryIndex - 1) * 85, 0);
 
     // console.log(galleryIndex);
   });
   arrowRight.addEventListener("click", () => {
-    if (galleryIndex < 9) {
+    if (galleryIndex < 25) {
       galleryIndex++;
       imgDisplay.src = `assets/ASIMG${galleryIndex}.jpg`;
     }
     imgSlider.children[galleryIndex - 2].style.border = "3px solid transparent";
     imgSlider.children[galleryIndex - 1].style.border = "3px solid yellow";
 
-    imgSlider.scrollTo((galleryIndex - 1) * 70, 0);
+    imgSlider.scrollTo((galleryIndex - 1) * 85, 0);
 
     // console.log(galleryIndex);
   });
