@@ -9,7 +9,7 @@ const newEmail = document.querySelector("#email");
 const load = () => {
   let galleryIndex = 1;
   imgDisplay.src = "assets/ASIMG1.jpg";
-  for (let i = 1; i <= 25; i++) {
+  for (let i = 1; i <= 17; i++) {
     let createImg = document.createElement("img");
     createImg.src = `assets/ASIMG${i}.jpg`;
     createImg.addEventListener("click", (e) => {
@@ -37,7 +37,7 @@ const load = () => {
     // console.log(galleryIndex);
   });
   arrowRight.addEventListener("click", () => {
-    if (galleryIndex < 25) {
+    if (galleryIndex < 17) {
       galleryIndex++;
       imgDisplay.src = `assets/ASIMG${galleryIndex}.jpg`;
     }

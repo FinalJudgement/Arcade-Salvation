@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 html {
   width: 100vw;
@@ -10,13 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-/* body {
-  position: relative;
-  background-image: url("./assets/background-asset-1.jpg");
-  background-size: 1900px;
-  background-attachment: fixed;
-  width: 100%;
-} */
 body:before {
   content: "";
   display: block;
@@ -31,6 +25,7 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  box-shadow: inset 0 0 0 700px rgba(0, 0, 0, 0.5);
 }
 
 /* ==================================================================== */
@@ -41,6 +36,25 @@ body:before {
 header {
   width: 100%;
   height: 100px;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  padding-bottom: 20px;
 }
 
 nav {
@@ -58,16 +72,12 @@ nav {
 
 nav img {
   max-height: 80px;
-  /* margin-left: 20px; */
 }
 
 nav ul {
   display: flex;
-  list-style-type: none;
-  font-family: sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  /* margin: 0 200px; */
 }
 
 nav li {
@@ -75,7 +85,6 @@ nav li {
 }
 
 nav ul a {
-  text-decoration: none;
   color: white;
   padding: 10px;
   border-bottom: 3px solid transparent;
@@ -120,8 +129,6 @@ i {
 .dropdown-content a {
   float: none;
   color: black;
-  /* padding: 12px 16px; */
-  text-decoration: none;
   display: block;
   text-align: left;
 }
@@ -137,7 +144,7 @@ i {
 
 /* ======================================================================= */
 
-/* First Section Content "Banner img and quote" */
+/* First Section Content of homepage "Banner img and quote" */
 
 /* ======================================================================= */
 
@@ -161,12 +168,10 @@ main {
 #banner :first-child {
   text-align: center;
   color: white;
-  font-family: sans-serif;
 }
 
 #banner h1 {
   font-size: 2.5rem;
-  font-weight: 700;
   margin: 20px;
 }
 
@@ -192,7 +197,6 @@ main {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 50px;
-  text-decoration: none;
 }
 
 #banner a:hover {
@@ -206,6 +210,11 @@ main {
   max-height: 500px;
   min-width: 300px;
   width: 100%;
+}
+
+.background-section-setup {
+  background-color: #f5f5f5;
+  padding: 90px;
 }
 
 /* ======================================================================= */
@@ -226,7 +235,6 @@ main {
   width: 100%;
   /* height: 900px; */
   background-color: rgb(238, 238, 228);
-  font-family: sans-serif;
   padding: 20px 0;
 }
 
@@ -253,15 +261,10 @@ main {
 }
 
 .content-cards h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  padding: 20px;
-  color: rgb(53, 52, 52);
-  border-bottom: 2px solid rgb(251, 71, 71);
+  border-bottom: 2px solid black;
 }
 
 content-cards a {
-  text-decoration: none;
   color: red;
 }
 
@@ -272,12 +275,10 @@ content-cards a {
 .content-cards ul {
   padding: 50px 20px;
   font-size: 1.6rem;
-  list-style-type: none;
   color: rgb(53, 52, 52);
 }
 
 .content-cards li {
-  font-family: sans-serif;
   padding: 10px;
   font-size: 1.6rem;
   color: rgb(53, 52, 52);
@@ -311,7 +312,6 @@ content-cards a {
   padding: 50px 20px;
   max-width: 600px;
   font-size: 1.6rem;
-  /* background-color: rgb(66, 66, 66); */
   color: rgb(53, 52, 52);
 }
 /* ===============================================| */
@@ -333,71 +333,12 @@ content-cards a {
   transition-duration: 0.5s;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  margin: 0 auto;
-  background-color: #4a4a48;
-  color: white;
-}
-
-#footer-logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-right: 2px solid white;
-  padding: 25px;
-  width: 50%;
-}
-
-#footer-logo-container img {
-  max-height: 80px;
-  padding-bottom: 20px;
-}
-
-#footer-logo-container button {
-  height: 60px;
-  width: 200px;
-  border: 5px solid yellow;
-  background-color: #4a4a48;
-  color: white;
-}
-#footer-logo-container button:hover {
-  background-color: yellow;
-  color: #4a4a48;
-  transition: 0.5s;
-}
-
-.footer-div {
-  text-align: center;
-  width: 50%;
-}
-
-.footer-div li {
-  list-style-type: none;
-  height: 37px;
-  font-size: 1.5rem;
-}
-
-.footer-div a {
-  text-decoration: none;
-  color: white;
-}
-
-.flex-div {
-  display: flex;
-  align-items: center;
-}
-
 /* css for services page  */
 
 .services {
   background-color: #f5f5f5;
   margin: 200px auto;
   max-width: 80%;
-  /* padding: 90px; */
   overflow-x: hidden;
 }
 
@@ -439,9 +380,8 @@ footer {
 
 .services section {
   text-align: left;
-  font-family: sans-serif;
   margin: 0 auto;
-  padding: 90px 20px;
+  padding: 50px 20px;
   width: 80%;
 }
 
@@ -454,19 +394,7 @@ footer {
   margin: 0 50px;
 }
 
-.services h1 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 3rem;
-}
-
-.services h2 {
-  color: #444;
-  font-size: 2rem;
-}
-
 .services ul {
-  list-style-type: disc;
   padding: 40px;
   font-size: 1.5rem;
   background-color: #f5f5f5;
@@ -474,16 +402,10 @@ footer {
 }
 
 .services li {
+  list-style-type: disc;
   margin-bottom: 5px;
   color: #333;
 }
-
-/* .services div img {
-  max-height: 350px;
-  border-radius: 10%;
-  box-shadow: 0 4px 10px 2px;
-  margin: 0 50px;
-} */
 
 .invert-color {
   background-color: rgb(40, 39, 39);
@@ -503,21 +425,10 @@ footer {
 
 /* css for the about me page */
 
-#about-me {
-  background-color: #f5f5f5; /* Background color */
-  padding: 90px; /* Add padding for spacing */
-  font-family: sans-serif;
-}
-
 .about-container {
-  max-width: 1200px; /* Set the maximum width of the content */
-  margin: 0 auto; /* Center the content horizontally */
-  text-align: left; /* Align text to the left */
-}
-
-.about-container h1 {
-  font-size: 3rem; /* Set the heading font size */
-  color: #333; /* Heading text color */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .about-container p {
@@ -528,30 +439,23 @@ footer {
 }
 
 .about-container img {
-  height: 250px;
+  height: 350px;
   border-radius: 10%;
   box-shadow: 0 4px 10px 2px;
-  margin: 0 50px;
+  margin: 50px 50px;
 }
 
 .about-container ul {
-  list-style-type: disc; /* Use bullets for unordered lists */
   margin: 30px 20px; /* Add left margin for lists */
   font-size: 1.5rem; /* Set the list font size */
   color: #555; /* List text color */
 }
 
 .about-container li {
-  list-style: none;
   padding: 10px 0;
 }
 
 /* Style headings within the content */
-.about-container h2 {
-  font-size: 2rem; /* Set subheading font size */
-  color: #222; /* Subheading text color */
-  margin-top: 100px; /* Add top margin for spacing */
-}
 
 .about-container aside {
   max-width: 120px;
@@ -564,9 +468,8 @@ footer {
   font-weight: 700;
 }
 
-.about-container aside a {
-  color: white;
-  text-decoration: none;
+.about-container a {
+  color: rgb(255, 255, 255);
 }
 
 .about-container aside:hover {
@@ -578,21 +481,10 @@ footer {
 
 /* This is css for the contact me page  */
 
-#contact {
-  background-color: #f5f5f5; /* Background color */
-  padding: 90px; /* Add padding for spacing */
-  font-family: sans-serif;
-}
-
 .contact-container {
   max-width: 800px; /* Set the maximum width of the content */
   margin: 0 auto; /* Center the content horizontally */
   text-align: left; /* Align text to the left */
-}
-
-h1 {
-  font-size: 3rem; /* Set the heading font size */
-  color: #333; /* Heading text color */
 }
 
 p {
@@ -603,23 +495,16 @@ p {
 }
 
 .contact-container ul {
-  list-style-type: none; /* Use bullets for unordered lists */
   margin: 20px; /* Add left margin for lists */
   font-size: 1.5rem; /* Set the list font size */
   color: #555; /* List text color */
 }
 
 /* Style headings within the content */
-h2 {
-  font-size: 2rem; /* Set subheading font size */
-  color: #222; /* Subheading text color */
-  margin-top: 20px; /* Add top margin for spacing */
-}
 
 /* Style links within the content */
 a {
   color: #007bff; /* Link text color */
-  text-decoration: underline; /* Add underline to links */
 }
 
 /* Style links on hover */
@@ -677,34 +562,23 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
   max-height: 1000px;
-  padding: 90px;
   padding-bottom: 280px;
-  font-family: sans-serif;
   font-weight: 700;
 }
 
-#gallery h1 {
-  color: #333;
-  text-align: center;
-  padding-bottom: 40px;
-}
-
 #gallery-ui {
-  margin: 0 auto;
+  margin: 40px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   max-height: 700px;
-  /* max-width: 700px; */
 }
 
 .arrow {
   position: relative;
   top: calc(50% - 10px);
   left: 40%;
-
   border: solid rgb(255, 255, 255);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -716,7 +590,6 @@ button:hover {
   height: 700px;
   width: 100px;
   min-width: 50px;
-
   background-color: rgb(53, 53, 53);
 }
 .img-slide:hover {
@@ -792,12 +665,106 @@ button:hover {
   width: 224px;
 }
 
+/* Footer Section of all pages */
+
+footer {
+  margin: 0 auto;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  padding: 0 100px;
+}
+#footer-upper {
+  padding: 80px 0;
+  display: flex;
+}
+
+footer a {
+  color: white;
+  padding: 10px 10px;
+}
+footer p {
+  color: white;
+  font-size: 1em;
+  margin: 0;
+  min-width: 110px;
+}
+
+#footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  margin-right: 100px;
+}
+
+#footer-logo-container img {
+  max-height: 60px;
+}
+
+#footer-logo-container button {
+  height: 40px;
+  width: 150px;
+  border: 3px solid yellow;
+  background-color: #4a4a48;
+  border-radius: 5px;
+  color: white;
+}
+#footer-logo-container button:hover {
+  background-color: yellow;
+  color: #4a4a48;
+  transition: 0.5s;
+}
+
+.footer-sectionals {
+  padding: 15px 50px 0;
+  width: 15%;
+}
+
+#footer-lower {
+  padding: 80px 0;
+}
+
+#connect {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#connect ul {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+#connect li {
+  padding: 10px;
+}
+#connect img {
+  width: 32px;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.588);
+}
+
+#copyright {
+  text-align: center;
+  color: rgb(209, 209, 209);
+  padding-top: 20px;
+}
+
+/* Responsive End; */
+
 @media only screen and (max-width: 1920px) {
   .content-cards ul {
     font-size: 1.2rem;
-  }
-  .content-cards h2 {
-    font-size: 1.8rem;
   }
   .content-cards span {
     font-size: 3rem;
@@ -817,11 +784,26 @@ button:hover {
   .services p {
     max-width: 600px;
   }
+
+  #footer-upper div {
+    margin: 20px 0;
+  }
 }
 
 @media only screen and (max-width: 1088px) {
   .reverse-div {
     flex-direction: column-reverse;
+  }
+  #footer-upper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer p {
+    width: none;
+  }
+  .footer-sectionals {
+    width: 100%;
   }
 }
 
@@ -883,10 +865,6 @@ button:hover {
   #img-slider img {
     max-height: 70px;
   }
-
-  #footer-logo-container img {
-    max-height: 40px;
-  }
 }
 
 @media only screen and (max-width: 630px) {
@@ -899,6 +877,19 @@ button:hover {
 }
 
 @media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .img-container {
+    padding: 40px;
+  }
+
   .dropdown .dropbtn {
     font-size: 0.8rem;
     border-bottom: 3px solid transparent;
@@ -921,13 +912,6 @@ button:hover {
     margin: 250px 0;
   }
 
-  .content-cards h2 {
-    text-align: center;
-    font-weight: 700;
-    padding: 10px;
-    border-bottom: 2px solid black;
-  }
-
   .content-cards li {
     font-size: 1.3rem;
   }
@@ -936,24 +920,8 @@ button:hover {
     font-size: 1.3rem;
   }
 
-  .services h1 {
-    font-size: 2.5rem;
-  }
-
   #about-me {
     padding: 80px 20px;
-  }
-
-  #about-me h1 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  #about-me h2 {
-    text-align: center;
-    font-weight: 700;
-    padding: 10px;
-    font-size: 1.8rem;
   }
 
   #about-me p {
@@ -965,7 +933,7 @@ button:hover {
   }
 
   .about-container img {
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   #contact {
@@ -980,24 +948,8 @@ button:hover {
     text-align: center;
   }
 
-  #contact h1 {
-    font-size: 2.5rem;
-  }
-
-  #contact h2 {
-    text-align: center;
-  }
-
   .contact-container p {
     font-size: 1.3rem;
     text-align: center;
-  }
-
-  #gallery h1 {
-    font-size: 2.5rem;
-  }
-
-  .footer-div li {
-    font-size: 1rem;
   }
 }
